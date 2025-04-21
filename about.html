@@ -5,72 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tentang Kami - Dodol Pulut Mak Andak</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body {
+            padding-top: 80px;
+        }
+        
+        @media (min-width: 768px) {
+            body {
+                padding-top: 0;
+            }
+        }
+        
+        /* Adjust spacing untuk mobile */
+        @media (max-width: 767px) {
+            .navbar-brand img {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .mobile-spacing {
+                margin-top: 30px;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <img src="images/logo.png" alt="Logo" width="70" height="70" class="me-2">
-            Dodol Pulut Mak Andak
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-              <li class="nav-item"><a class="nav-link active" href="about.html">Tentang</a></li>
-              <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
-              <li class="nav-item"><a class="nav-link" href="lokasi.html">Lokasi</a></li>
-              <li class="nav-item"><a class="nav-link" href="pemesanan.html">Pemesanan</a></li>
-              <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
-            </ul>
-          </div>
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Logo" class="img-fluid me-2" style="width: 70px; height: 70px;">
+                <span class="d-none d-md-block">Dodol Pulut Mak Andak</span>
+                <span class="d-md-none">Mak Andak</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="about.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="galeri.html">Galeri</a></li>
+                    <li class="nav-item"><a class="nav-link" href="lokasi.html">Lokasi</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pemesanan.html">Pesan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+                </ul>
+            </div>
         </div>
-      </nav>      
+    </nav>
 
-    <!-- About Section -->
-    <section class="container mt-md-5 pt-md-5">
+    <!-- Main Content -->
+    <main class="container mt-md-5 pt-5 mobile-spacing">
         <!-- Profil Pemilik -->
-        <div class="row align-items-center mt-3 mt-md-5" style="padding-top: 50px;">
-            <div class="col-12 col-md-4 order-2 order-md-1 mt-4 mt-md-0">
-                <div class="card shadow-sm border-light rounded mx-auto" style="max-width: 300px;">
-                    <img src="images/pemilik.jpg" class="card-img-top img-fluid rounded-circle mx-auto d-block" alt="Ibu Karmisah">
+        <section class="row align-items-center gy-4">
+            <div class="col-md-4 order-md-2">
+                <div class="card shadow-sm border-light card-profile">
+                    <img src="images/pemilik.jpg" class="card-img-top rounded-circle p-3" alt="Ibu Karmisah">
                 </div>
             </div>
-            <div class="col-12 col-md-8 order-1 order-md-2 ps-md-5">
-                <h2 class="text-center text-md-start">Profil Pemilik</h2>
-                <p class="text-justify px-3 px-md-0"><strong>Ibu Karmisah</strong> atau lebih sering dikenali dengan nama <strong>Mak Andak</strong> adalah sosok ibu rumah tangga yang ulet dan kreatif. Beliau tinggal di salah satu desa di Kecamatan Bengkalis tepatnya di Desa Kuala alam. Sejak tahun 2019, beliau mulai mengembangkan usaha rumahan dodol pulut yang diproduksi pada saat menjelang Idul Fitri dan Idul Adha sesuai pesanan Pelanggan.</p>
-                <p class="text-justify px-3 px-md-0">Dengan bahan-bahan berkualitas dan cita rasa tradisional khas Bengkalis, Dodol Pulut Mak Andak menjadi favorit warga sekitar bahkan pelanggan dari luar daerah.</p>
+            
+            <!-- Tambah padding top ekstra hanya di mobile -->
+            <div class="col-md-8 order-md-1 section-content pt-4 pt-md-0">
+                <h2 class="text-center text-md-start mb-4">Profil Pemilik</h2>
+                <div class="text-content">
+                    <p><strong>Ibu Karmisah</strong> atau lebih sering dikenali dengan nama <strong>Mak Andak</strong> adalah sosok ibu rumah tangga yang ulet dan kreatif. Beliau tinggal di salah satu desa di Kecamatan Bengkalis tepatnya di Desa Kuala Alam.</p>
+                    <p>Sejak tahun 2019, beliau mulai mengembangkan usaha rumahan dodol pulut yang diproduksi pada saat menjelang Idul Fitri dan Idul Adha sesuai pesanan pelanggan. Dengan bahan-bahan berkualitas dan cita rasa tradisional khas Bengkalis, Dodol Pulut Mak Andak menjadi favorit warga sekitar bahkan pelanggan dari luar daerah.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Sekilas tentang Dodol Pulut -->
-        <div class="row align-items-center mt-5">
-            <div class="col-12 col-md-6 mb-4 mb-md-0">
-                <h2 class="text-center text-md-start">Sekilas tentang Dodol Pulut</h2>
-                <p class="text-justify px-3 px-md-0"><strong>Dodol Pulut</strong> adalah salah satu kuliner tradisional khas Kabupaten Bengkalis, Riau, yang terkenal dengan tekstur kenyal dan rasa manis legit. Terbuat dari bahan utama beras ketan (pulut), santan kelapa, dan gula merah, dodol ini dimasak dengan teknik khusus hingga menghasilkan adonan yang lembut dan tahan lama.</p>
-                <p class="text-justify px-3 px-md-0">Di Bengkalis, dodol pulut tidak hanya hadir dalam varian original, tetapi juga tersedia dalam berbagai rasa seperti pandan, durian, dan bahkan buah naga, yang mencerminkan kekayaan hasil bumi setempat. Proses pembuatannya memerlukan waktu dan kesabaran, di mana adonan harus diaduk terus-menerus selama beberapa jam untuk mencapai konsistensi yang diinginkan.</p>
+        <!-- Tentang Dodol -->
+        <section class="row align-items-center mt-5 gy-4">
+            <div class="col-md-6 section-content">
+                <h2 class="text-center text-md-start mb-4">Sekilas tentang Dodol Pulut</h2>
+                <div class="text-content">
+                    <p><strong>Dodol Pulut</strong> adalah salah satu kuliner tradisional khas Kabupaten Bengkalis, Riau, yang terkenal dengan tekstur kenyal dan rasa manis legit. Terbuat dari bahan utama beras ketan (pulut), santan kelapa, dan gula merah.</p>
+                    <p>Di Bengkalis, dodol pulut tersedia dalam berbagai rasa seperti pandan, durian, dan buah naga yang mencerminkan kekayaan hasil bumi setempat. Proses pembuatannya memerlukan waktu dan kesabaran dengan pengadukan terus-menerus selama beberapa jam.</p>
+                </div>
             </div>
-            <div class="col-12 col-md-6">
-                <img src="images/dodol2.jpg" class="img-fluid rounded d-block mx-auto" alt="Dodol Pulut" style="max-width: 100%; height: auto;">
+            
+            <div class="col-md-6">
+                <img src="images/dodol2.jpg" class="img-fluid rounded" alt="Dodol Pulut" loading="lazy">
             </div>
-        </div>
+        </section>
 
         <!-- Logo Section -->
-        <div class="row mt-5 text-center">
-            <div class="col-12">
-                <img src="images/Logo.png" alt="Logo Usaha" class="img-fluid" style="max-width: min(100%, 350px);">
-                <h4 class="mt-2">Logo Dodol Pulut Mak Andak</h4>
+        <section class="row mt-5">
+            <div class="col-12 text-center">
+                <img src="images/Logo.png" alt="Logo Usaha" class="img-fluid mb-3" style="max-width: min(100%, 350px)">
+                <h4 class="fw-normal">Logo Dodol Pulut Mak Andak</h4>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Footer -->
-    <footer class="bg-secondary text-white text-center py-4 mt-5">
-        <div class="container">
+    <footer class="bg-secondary text-white py-4 mt-5">
+        <div class="container text-center">
             <p class="mb-0">&copy; 2025 Dodol Pulut Mak Andak - Bengkalis</p>
         </div>
     </footer>
