@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap");
+
+html, body {
+  font-family: "Oswald", sans-serif;
+  height: 100%;
+}
+
+h1, h2, h3{
+  font-family: "Merriweather", cursive;
+  color: #d35400;
+}
+
+.banner {
+  height: 80vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/dodol.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.hovered-card {
+  transition: 0.3s;
+}
+
+.hovered-card:hover {
+  transform: scale(1.1);
+}
+
